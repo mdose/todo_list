@@ -17,9 +17,11 @@ def add_to_list(my_list, item):
 
 def view_list(my_list):
     """Print each item in the list."""
+    for item in my_list:
+        print item
 
-    print "The view_list function has not yet been written"
 
+    
 
 def display_main_menu(my_list):
     """Displays main options, takes in user input, and calls view or add function."""
