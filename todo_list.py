@@ -9,8 +9,9 @@ You can run the script in your Terminal at any time using the command:
 
 """
 
-def add_to_list(my_list, item):
+def add_to_list(my_list):
     """Takes user input and adds it as a new item to the end of the list."""
+    item = raw_input(" What do you want to add? ") 
     item.append(my_list)
     return my_list
 
@@ -33,20 +34,27 @@ def display_main_menu():
     C. Quit the program
     >>> """
    
-    choice = raw_input(user_options)
-    print choice
+
     
 
-   
-    # while True:
-    #     # Collect input and include your if/elif/else statements here.
-    #     if user_options == "a" or "a.":
-    #         add_to_list(, user_options)
 
-    #     break
+   
+    while True:
+        choice.lower() = raw_input(user_options)
+        print choice
+        # Collect input and include your if/elif/else statements here.
+        if choice == "a" or "a.":
+            add_to_list(our_list)
+        elif choice == "b" or "b.":
+
+        elif choice == "c" or "c.":
+            break
+        else:
+            print "what?!"
+    
 
 #-------------------------------------------------
 
-my_list = []
+our_list = []
 display_main_menu()
 
